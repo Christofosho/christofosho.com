@@ -10,7 +10,7 @@ export default function Footer() {
       Christopher Snow &copy; 2024
       <nav>
         <a className="github" href="https://github.com/christofosho" rel="noopener noreferrer" target="_blank">
-          <FontAwesomeIcon icon={faGithub} height={ICON_SIZE} width={ICON_SIZE} border={false} />
+          <FontAwesomeIcon icon={faGithub} height={ICON_SIZE} width={ICON_SIZE} color="black" />
         </a>
       </nav>
     </footer>
