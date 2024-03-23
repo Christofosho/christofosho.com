@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 50px;
+  --footer-height: 30px;
+  --nav-item-width: 60px;
+  --background-color: #fbf0ca;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0f0f0f;
+    --background-color-tooltip: #fbf0ca;
+  }
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: var(--header-height);
+}
+
+article {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+header nav {
+  border-bottom: 1px solid #DDDDDD66;
+  box-shadow: 0 2px 5px #0000004d;
+}
+
+nav li {
+  text-align: center;
+  height: var(--header-height);
+  width: var(--nav-item-width);
+  font-size: 1em;
+}
+
+.nav__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  width: var(--nav-item-width);
+  background-color: var(--background-color);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: var(--footer-height);
+  align-items: center;
+  padding: 0 20px;
+  border-top: 1px solid #DDDDDD66;
+}
+
+.github {
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  gap: 3px
+}
+
+.github:after {
+  content: "GitHub";
+  max-width: 0px;
+  position: relative;
+  display: inline-block;
+  transition: all ease 500ms;
+  overflow: hidden;
+}
+
+.github:hover:after {
+  content: "GitHub";
+  max-width: 60px;
+  position: relative;
+  display: inline-block;
+  transition: all ease 800ms;
+  overflow: hidden;
+}
