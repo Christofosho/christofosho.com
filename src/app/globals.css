@@ -1,6 +1,5 @@
 :root {
   --header-height: 50px;
-  --footer-height: 30px;
   --nav-item-width: 60px;
   --background-color: #fbf0ca;
 }
@@ -32,14 +31,13 @@ main {
   flex-direction: column;
 }
 
-header, nav {
+header, nav, footer {
   height: var(--header-height);
 }
 
 nav {
   display: flex;
   gap: 1em;
-  align-items: center;
 }
 
 header nav {
@@ -66,13 +64,11 @@ nav .nav__home {
 }
 
 
-article {
+.view {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 1em;
-  padding: 0 20px;
+  flex: 1;
+  padding: 1em 20px;
 }
 
 .toggle-button {
@@ -86,7 +82,6 @@ article {
 footer {
   display: flex;
   justify-content: space-between;
-  height: var(--footer-height);
   align-items: center;
   padding: 0 20px;
   border-top: 1px solid #DDDDDD66;
@@ -96,6 +91,9 @@ footer {
   border: none;
   box-shadow: none;
   color: black;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
 }
 
 .github:hover {
@@ -105,20 +103,23 @@ footer {
 
 .github:after {
   content: "GitHub";
+  font-size: large;
   max-width: 0px;
-  position: relative;
   display: inline-block;
   transition: all ease 500ms;
   overflow: hidden;
-  margin-left: 3px;
+  margin-left: 5px;
 }
 
 .github:hover:after {
   content: "GitHub";
   max-width: 80px;
-  position: relative;
   display: inline-block;
   transition: all ease 800ms;
   overflow: hidden;
   color: rgb(3, 2, 81);
+}
+
+.github svg {
+  vertical-align: 0;
 }
