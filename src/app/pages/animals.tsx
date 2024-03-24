@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaw } from "@fortawesome/free-solid-svg-icons/faPaw";
 
 interface IAnimalsProps {
 
@@ -7,7 +9,7 @@ interface IAnimalsProps {
 export default function Animals({ }: IAnimalsProps) {
   return (
     <article className="view__animals">
-      Animal Lover
+      <FontAwesomeIcon icon={faPaw} size="2xl" /> Animal Lover
     </article>
   );
 }
