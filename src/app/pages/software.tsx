@@ -6,7 +6,7 @@ interface ISoftwareProps {
 
 export default function Software({ }: ISoftwareProps) {
   return (
-    <article>
+    <article className="view__software">
       Software Developer
     </article>
   );

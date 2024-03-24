@@ -6,7 +6,7 @@ interface IGreenTeaProps {
 
 export default function GreenTea({ }: IGreenTeaProps) {
   return (
-    <article>
+    <article className="view__greentea">
       Green Tea Snob
     </article>
   );

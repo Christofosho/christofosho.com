@@ -6,7 +6,7 @@ interface ILanguageProps {
 
 export default function Language({ }: ILanguageProps) {
   return (
-    <article>
+    <article className="view__language">
       French Learner | Apprenant de français
     </article>
   );

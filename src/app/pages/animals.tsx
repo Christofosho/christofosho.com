@@ -6,7 +6,7 @@ interface IAnimalsProps {
 
 export default function Animals({ }: IAnimalsProps) {
   return (
-    <article>
+    <article className="view__animals">
       Animal Lover
     </article>
   );

@@ -6,7 +6,7 @@ interface IIntroductionProps {
 
 export default function Introduction({ }: IIntroductionProps) {
   return (
-    <article>
+    <article className="view__introduction">
       Christopher
     </article>
   );

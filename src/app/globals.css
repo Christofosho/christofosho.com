@@ -63,20 +63,40 @@ nav .nav__home {
   background-color: var(--background-color);
 }
 
-
 .view {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1em 20px;
+  padding: 0.5em 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-.toggle-button {
-  background: unset;
-  border: none;
-  width: 50px;
-  height: 50px;
-  align-self: center;
+.view__animals,
+.view__family,
+.view__greentea,
+.view__introduction,
+.view__language,
+.view__musician,
+.view__scifi,
+.view__software {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view__introduction {
+  background-color: rgba(255, 255, 255, 0.274);
+}
+
+.animated-div {
+  position: "absolute";
+  flex: 1;
+}
+
+article {
+  height: 100%;
 }
 
 footer {

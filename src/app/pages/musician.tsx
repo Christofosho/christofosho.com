@@ -6,7 +6,7 @@ interface IMusicianProps {
 
 export default function Musician({ }: IMusicianProps) {
   return (
-    <article>
+    <article className="view__musician">
       Player of Music
     </article>
   );

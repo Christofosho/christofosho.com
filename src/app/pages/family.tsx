@@ -6,7 +6,7 @@ interface IFamilyProps {
 
 export default function Family({ }: IFamilyProps) {
   return (
-    <article>
+    <article className="view__family">
       Husband and Father
     </article>
   );

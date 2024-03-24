@@ -6,7 +6,7 @@ interface IScienceFictionProps {
 
 export default function ScienceFiction({ }: IScienceFictionProps) {
   return (
-    <article>
+    <article className="view__scifi">
       Sci-Fi Enthusiast
     </article>
   );
