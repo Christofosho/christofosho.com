@@ -9,7 +9,7 @@ interface ILanguageProps {
 export default function Language({ }: ILanguageProps) {
   return (
     <article className="view__language">
-      <FontAwesomeIcon icon={faBook} size="2xl" /> French Learner | Apprenant de français
+      <FontAwesomeIcon icon={faBook} size="2xl" /> Apprenant de français
     </article>
   );
 }
