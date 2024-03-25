@@ -4,13 +4,6 @@
   --background-color: #fbf0ca;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #0f0f0f;
-    --background-color-tooltip: #fbf0ca;
-  }
-}
-
 *, html, body {
   margin: 0;
   padding: 0;
