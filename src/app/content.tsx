@@ -11,6 +11,8 @@ import Animals from "./pages/animals";
 import Musician from "./pages/musician";
 
 import NoScript from "./components/noscript";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 
 export default function Content() {
   const parallax = useRef<IParallax>(null!);
@@ -21,6 +23,10 @@ export default function Content() {
       <Parallax ref={parallax} pages={8}>
         <ParallaxLayer offset={0} speed={0} className="animated-div">
           <Introduction />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={0} className="animated-div">
+          <FontAwesomeIcon icon={faChevronDown} size="xl" className="scrolldown" />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0} className="animated-div">

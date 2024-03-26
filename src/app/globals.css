@@ -61,6 +61,24 @@ nav .nav__home {
   background-color: var(--background-color);
 }
 
+.scrolldown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1vh;
+  margin: 0 auto;
+  animation-name: bump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: black;
+}
+
+@keyframes bump {
+  50% {
+    color: #2d68b4
+  }
+}
+
 .view {
   display: flex;
   flex-direction: column;
