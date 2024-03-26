@@ -137,7 +137,8 @@ footer {
   border-top: 2px solid #adadad;
 }
 
-.github {
+.github,
+.linkedin {
   border: none;
   box-shadow: none;
   color: black;
@@ -146,13 +147,23 @@ footer {
   text-decoration: none;
 }
 
-.github:hover {
+.github:hover,
+.github:active,
+.linkedin:hover,
+.linkedin:active {
   transition: all ease 500ms;
-  color: rgb(3, 2, 81);
 }
 
-.github:after {
+.github::after {
   content: "GitHub";
+}
+
+.linkedin::after {
+  content: "LinkedIn";
+}
+
+.github::after,
+.linkedin::after {
   font-size: large;
   max-width: 0px;
   display: inline-block;
@@ -161,15 +172,241 @@ footer {
   margin-left: 5px;
 }
 
-.github:hover:after {
-  content: "GitHub";
+.github:hover::after,
+.github:active::after,
+.linkedin:hover::after,
+.linkedin:active::after {
   max-width: 80px;
-  display: inline-block;
   transition: all ease 800ms;
-  overflow: hidden;
-  color: rgb(3, 2, 81);
 }
 
-.github svg {
+.github svg,
+.linkedin svg {
   vertical-align: 0;
+}
+
+noscript {
+  display: flex;
+  align-self: center;
+}
+
+.view noscript p {
+  position: absolute;
+  top: -100%;
+  left: 20px;
+  width: fit-content;
+}
+
+.view noscript p:first-child {
+  animation-name: slide-in-1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-1 {
+  0% {
+    top: 150%;
+  }
+
+  40%, 100% {
+    top: 10vh;
+  }
+}
+
+.view noscript p:nth-child(2) {
+  animation-name: slide-in-2;
+  animation-delay: 1500ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-2 {
+  0% {
+    top: 150%;
+  }
+
+  40%, 100% {
+    top: 20vh;
+  }
+}
+
+.view noscript .icons {
+  font-size: large;
+}
+
+.view noscript .icons div {
+  position: absolute;
+  top: 50%;
+  left: 200%;
+}
+
+.view noscript .icons > div:nth-child(1) {
+  animation-name: slide-in-icon-1;
+  animation-delay: 6s;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-1 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 30vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons > div:nth-child(2) {
+  animation-name: slide-in-icon-2;
+  animation-delay: 3500ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-2 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 35vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons > div:nth-child(3) {
+  animation-name: slide-in-icon-3;
+  animation-delay: 4500ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-3 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 40vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons > div:nth-child(4) {
+  animation-name: slide-in-icon-4;
+  animation-delay: 3s;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-4 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 45vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons > div:nth-child(5) {
+  animation-name: slide-in-icon-5;
+  animation-delay: 4s;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-5 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 50vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons > div:nth-child(6) {
+  animation-name: slide-in-icon-6;
+  animation-delay: 5500ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-6 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 55vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons > div:nth-child(7) {
+  animation-name: slide-in-icon-7;
+  animation-delay: 2500ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-7 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 60vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons > div:nth-child(8) {
+  animation-name: slide-in-icon-8;
+  animation-delay: 5s;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-icon-8 {
+  0% {
+    top: 50%;
+    left: 100%;
+  }
+
+  100% {
+    top: 65vh;
+    left: 20px;
+  }
+}
+
+.view noscript .icons div span {
+  animation-name: slide-in-icon-9;
+  animation-delay: 5500ms;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-left: 10px;
+}
+
+@keyframes slide-in-icon-9 {
+  0%, 90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
