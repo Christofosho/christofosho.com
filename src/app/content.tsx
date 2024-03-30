@@ -7,7 +7,6 @@ import Software from "./pages/software";
 import ScienceFiction from "./pages/scifi";
 import GreenTea from "./pages/greentea";
 import Language from "./pages/language";
-import Animals from "./pages/animals";
 import Musician from "./pages/musician";
 
 import NoScript from "./components/noscript";
@@ -20,7 +19,7 @@ export default function Content() {
   return (
     <div className="view">
       <NoScript />
-      <Parallax ref={parallax} pages={8}>
+      <Parallax ref={parallax} pages={7}>
         <ParallaxLayer offset={0} speed={0} className="animated-div">
           <Introduction />
         </ParallaxLayer>
@@ -50,10 +49,6 @@ export default function Content() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={6} speed={0} className="animated-div">
-          <Animals />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={7} speed={0} className="animated-div">
           <Musician />
         </ParallaxLayer>
       </Parallax>
