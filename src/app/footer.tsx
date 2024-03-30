@@ -11,7 +11,7 @@ export default function Footer() {
         <a className="github" href="https://github.com/christofosho" rel="noopener noreferrer" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="lg" color="black" />
         </a>
-        <a className="linkedin" href="https://linkedin.com/christopher-snow-0" target="_blank" rel="noreferrer noopener">
+        <a className="linkedin" href="https://linkedin.com/in/christopher-snow-0" target="_blank" rel="noreferrer noopener">
           <FontAwesomeIcon icon={faLinkedin} size="lg" color="black" />
         </a>
       </nav>
