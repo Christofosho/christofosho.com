@@ -6,7 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 export default function Footer() {
   return (
     <footer>
-      Christopher Snow &copy; 2024
+      <small>Christopher Snow &copy; 2024</small>
       <nav>
         <a className="github" href="https://github.com/christofosho" rel="noopener noreferrer" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="lg" color="black" />

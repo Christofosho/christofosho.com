@@ -25,6 +25,7 @@ export default function Content() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={0} className="animated-div">
+          <div className="scrolldown-text">Scroll for more about me!</div>
           <FontAwesomeIcon icon={faChevronDown} size="xl" className="scrolldown" />
         </ParallaxLayer>
 

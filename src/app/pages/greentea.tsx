@@ -9,7 +9,7 @@ interface IGreenTeaProps {
 export default function GreenTea({ }: IGreenTeaProps) {
   return (
     <article className="view__greentea">
-      <FontAwesomeIcon icon={faMugSaucer} size="2xl" /> Green Tea Snob
+      <FontAwesomeIcon icon={faMugSaucer} size="2xl" /><h2>Green Tea Snob</h2>
     </article>
   );
 }

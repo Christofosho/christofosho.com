@@ -14,6 +14,14 @@ html, body, main {
   background-color: rgb(245, 255, 255)
 }
 
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 200;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -76,6 +84,31 @@ nav .nav__home {
 @keyframes bump {
   50% {
     color: #2d68b4
+  }
+}
+
+.scrolldown-text {
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10vh;
+  margin: 0 auto;
+  font-size: smaller;
+  font-weight: 200;
+  opacity: 1;
+  animation-name: scrollfade;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scrollfade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

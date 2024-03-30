@@ -9,7 +9,7 @@ interface IMusicianProps {
 export default function Musician({ }: IMusicianProps) {
   return (
     <article className="view__musician">
-      <FontAwesomeIcon icon={faMusic} size="2xl" /> Player of Music
+      <FontAwesomeIcon icon={faMusic} size="2xl" /><h2>Musician</h2>
     </article>
   );
 }
