@@ -8,8 +8,8 @@ interface IScienceFictionProps {
 
 export default function ScienceFiction({ }: IScienceFictionProps) {
   return (
-    <article className="view__scifi">
+    <section className="interest__scifi">
       <FontAwesomeIcon icon={faUserAstronaut} size="2xl" /><h2>Sci-Fi Enthusiast</h2>
-    </article>
+    </section>
   );
 }

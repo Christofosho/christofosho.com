@@ -8,8 +8,8 @@ interface IIntroductionProps {
 
 export default function Introduction({ }: IIntroductionProps) {
   return (
-    <article className="view__introduction">
+    <section className="view__introduction">
       <FontAwesomeIcon icon={faUserTie} size="2xl" /><h1>Christopher Snow</h1>
-    </article>
+    </section>
   );
 }

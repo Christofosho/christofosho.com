@@ -8,8 +8,8 @@ interface ILanguageProps {
 
 export default function Language({ }: ILanguageProps) {
   return (
-    <article className="view__language">
+    <section className="interest__language">
       <FontAwesomeIcon icon={faBook} size="2xl" /><h2>Apprenant de français</h2>
-    </article>
+    </section>
   );
 }

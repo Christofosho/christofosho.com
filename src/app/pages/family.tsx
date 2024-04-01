@@ -8,8 +8,8 @@ interface IFamilyProps {
 
 export default function Family({ }: IFamilyProps) {
   return (
-    <article className="view__family">
+    <section className="interest__family">
       <FontAwesomeIcon icon={faBaby} size="2xl" /><h2>Husband and Father</h2>
-    </article>
+    </section>
   );
 }
