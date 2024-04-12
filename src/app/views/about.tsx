@@ -7,14 +7,10 @@ import GreenTea from "../pages/greentea";
 import Language from "../pages/language";
 import Musician from "../pages/musician";
 
-interface IAbout {
-  onClick: () => void,
-}
-
-export default function About({ onClick }: IAbout) {
+export default function About() {
 
   return (
-    <div className="view__about" onClick={onClick}>
+    <div className="view__about">
       <Family />
       <Software />
       <ScienceFiction />

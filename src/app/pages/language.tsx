@@ -2,14 +2,20 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
 
-interface ILanguageProps {
+import Card from "../components/card";
 
-}
-
-export default function Language({ }: ILanguageProps) {
+export default function Language() {
   return (
-    <section className="interest__language">
-      <FontAwesomeIcon icon={faBook} size="2xl" /><h2>Apprenant de français</h2>
-    </section>
+    <Card
+      backgroundColor="#122da1"
+      className="interest__language"
+      content={
+        <div className="card-content">
+          Je passe un peu de temps en apprendre la langue français. C&apos;est très agréable !
+        </div>
+      }
+      heading="Apprenant de français"
+      icon={<FontAwesomeIcon icon={faBook} size="2xl" />}
+    />
   );
 }

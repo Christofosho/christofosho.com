@@ -3,7 +3,7 @@ import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import Introduction from "./views/introduction";
 import About from "./views/about";
-import Projects from "./views/projects";
+// import Projects from "./views/projects";
 
 import NoScript from "./components/noscript";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,7 +30,7 @@ export default function Content() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0} className="animated-div">
-          <About onClick={() => scroll(0)}/>
+          <About />
         </ParallaxLayer>
 
         {/* <ParallaxLayer offset={2} speed={0} className="animated-div">
