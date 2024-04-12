@@ -125,7 +125,7 @@ nav .nav__home {
 }
 
 .card-front {
-
+  text-align: center;
 }
 
 .card-front, .card-back {
@@ -143,7 +143,15 @@ nav .nav__home {
 
 .card-content {
   text-align: center;
-  padding: 10px;
+  width: 90%;
+  padding: 10%;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 700px) {
+  .card-content {
+    font-size: large;
+  }
 }
 
 .view__introduction,
@@ -175,6 +183,17 @@ nav .nav__home {
 .interest__software {
   position: relative;
   flex-basis: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .interest__family,
+  .interest__greentea,
+  .interest__language,
+  .interest__musician,
+  .interest__scifi,
+  .interest__software {
+    flex-basis: 100%;
+  }
 }
 
 .interest__scifi {
