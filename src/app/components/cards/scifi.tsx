@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons/faUserAstronaut";
 
-import Card from "../components/card";
+import Card from "../card";
 
 export default function ScienceFiction() {
   return (

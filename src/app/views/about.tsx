@@ -1,11 +1,11 @@
 import React from "react";
 
-import Family from "../pages/family";
-import Software from "../pages/software";
-import ScienceFiction from "../pages/scifi";
-import GreenTea from "../pages/greentea";
-import Language from "../pages/language";
-import Musician from "../pages/musician";
+import Family from "../components/cards/family";
+import Software from "../components/cards/software";
+import ScienceFiction from "../components/cards/scifi";
+import GreenTea from "../components/cards/greentea";
+import Language from "../components/cards/language";
+import Musician from "../components/cards/musician";
 
 export default function About() {
 

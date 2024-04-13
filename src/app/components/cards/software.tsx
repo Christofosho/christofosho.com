@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
 
-import Card from "../components/card";
+import Card from "../card";
 
 export default function Software() {
   return (

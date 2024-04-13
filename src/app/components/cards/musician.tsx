@@ -2,7 +2,7 @@ import { faMusic } from "@fortawesome/free-solid-svg-icons/faMusic";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-import Card from "../components/card";
+import Card from "../card";
 
 export default function Musician() {
   return (
