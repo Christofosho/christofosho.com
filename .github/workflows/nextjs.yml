@@ -37,6 +37,10 @@ jobs:
         if: steps.cache_dependencies.outputs.cache-hit != 'true'
         run: npm ci
 
+      - name: Run test suite
+        shell: bash
+        run: npm run test
+
       - name: Build with Next.js
         run: npx next build
 
