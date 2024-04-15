@@ -4,16 +4,14 @@ import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
 
 import Card from "../card";
 
+import { LANGUAGE_CONTENT } from "../../constants";
+
 export default function Language() {
   return (
     <Card
       backgroundColor="#122da1"
       className="interest__language"
-      content={
-        <div className="card-content">
-          Je passe un peu de temps en apprendre la langue français. C&apos;est très agréable !
-        </div>
-      }
+      content={<div className="card-content">{LANGUAGE_CONTENT}</div>}
       heading="Apprenant de français"
       icon={<FontAwesomeIcon icon={faBook} size="2xl" />}
     />

@@ -1,19 +1,17 @@
-import { faMusic } from "@fortawesome/free-solid-svg-icons/faMusic";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMusic } from "@fortawesome/free-solid-svg-icons/faMusic";
 
 import Card from "../card";
+
+import { MUSICIAN_CONTENT } from "../../constants";
 
 export default function Musician() {
   return (
     <Card
       backgroundColor="#ffffff"
       className="interest__musician"
-      content={
-        <div className="card-content">
-          I have a bachelors in percussion, and was a music teacher for 4 years. I love playing and listening to music!
-        </div>
-      }
+      content={<div className="card-content">{MUSICIAN_CONTENT}</div>}
       heading="Musician"
       icon={<FontAwesomeIcon icon={faMusic} size="2xl" />}
     />
