@@ -4,7 +4,7 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
 
 import Card from "../card";
 
-import { SOFTWARE_CONTENT } from "../../constants";
+import { SOFTWARE_CONTENT, SOFTWARE_HEADER } from "../../constants";
 
 export default function Software() {
   return (
@@ -12,7 +12,7 @@ export default function Software() {
       backgroundColor="#efd4ff"
       className="interest__software"
       content={<div  className="card-content">{SOFTWARE_CONTENT}</div>}
-      heading="Software Developer"
+      heading={SOFTWARE_HEADER}
       icon={<FontAwesomeIcon icon={faLaptopCode} size="2xl" />}
     />
   );
