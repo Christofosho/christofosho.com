@@ -10,7 +10,7 @@ export default function Musician() {
   return (
     <Card
       backgroundColor="#ffffff"
-      className="interest__musician"
+      className="interest interest__musician"
       content={<div className="card-content">{MUSICIAN_CONTENT}</div>}
       heading={MUSICIAN_HEADER}
       icon={<FontAwesomeIcon icon={faMusic} size="2xl" />}

@@ -10,7 +10,7 @@ export default function GreenTea() {
   return (
     <Card
       backgroundColor="#c2ffbd"
-      className="interest__greentea"
+      className="interest interest__greentea"
       content={<div className="card-content">{GREENTEA_CONTENT}</div>}
       heading={GREENTEA_HEADER}
       icon={<FontAwesomeIcon icon={faMugSaucer} size="2xl" />}

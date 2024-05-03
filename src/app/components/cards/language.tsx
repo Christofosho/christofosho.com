@@ -10,7 +10,7 @@ export default function Language() {
   return (
     <Card
       backgroundColor="#122da1"
-      className="interest__language"
+      className="interest interest__language"
       content={<div className="card-content">{LANGUAGE_CONTENT}</div>}
       heading={LANGUAGE_HEADER}
       icon={<FontAwesomeIcon icon={faBook} size="2xl" />}

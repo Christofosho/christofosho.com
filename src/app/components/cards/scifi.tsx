@@ -10,7 +10,7 @@ export default function ScienceFiction() {
   return (
     <Card
       backgroundColor="#040736"
-      className="interest__scifi"
+      className="interest interest__scifi"
       content={<div className="card-content">{SCIFI_CONTENT}</div>}
       heading={SCIFI_HEADER}
       icon={<FontAwesomeIcon icon={faUserAstronaut} size="2xl" />}

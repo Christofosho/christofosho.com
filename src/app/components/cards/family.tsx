@@ -10,7 +10,7 @@ export default function Family() {
   return (
     <Card
       backgroundColor="#cbfafa"
-      className="interest__family"
+      className="interest interest__family"
       content={<div className="card-content">{FAMILY_CONTENT}</div>}
       heading={FAMILY_HEADER}
       icon={<FontAwesomeIcon icon={faBaby} size="2xl" />}

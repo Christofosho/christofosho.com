@@ -10,7 +10,7 @@ export default function Software() {
   return (
     <Card
       backgroundColor="#efd4ff"
-      className="interest__software"
+      className="interest interest__software"
       content={<div  className="card-content">{SOFTWARE_CONTENT}</div>}
       heading={SOFTWARE_HEADER}
       icon={<FontAwesomeIcon icon={faLaptopCode} size="2xl" />}

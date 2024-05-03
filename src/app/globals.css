@@ -173,25 +173,17 @@ nav .nav__home {
   flex-wrap: wrap;
   height: 100%;
   background-color: rgb(138, 138, 138);
+
+  container: interest / inline-size;
 }
 
-.interest__family,
-.interest__greentea,
-.interest__language,
-.interest__musician,
-.interest__scifi,
-.interest__software {
+.interest {
   position: relative;
   flex-basis: 50%;
 }
 
-@media screen and (max-width: 700px) {
-  .interest__family,
-  .interest__greentea,
-  .interest__language,
-  .interest__musician,
-  .interest__scifi,
-  .interest__software {
+@container interest (max-width: 700px) {
+  .interest {
     flex-basis: 100%;
   }
 }
