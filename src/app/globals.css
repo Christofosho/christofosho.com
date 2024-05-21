@@ -241,7 +241,8 @@ footer {
 }
 
 .github,
-.linkedin {
+.linkedin,
+.leetcode {
   border: none;
   box-shadow: none;
   color: black;
@@ -253,7 +254,9 @@ footer {
 .github:hover,
 .github:active,
 .linkedin:hover,
-.linkedin:active {
+.linkedin:active,
+.leetcode:hover,
+.leetcode:active {
   transition: all ease 500ms;
 }
 
@@ -265,8 +268,13 @@ footer {
   content: "LinkedIn";
 }
 
+.leetcode::after {
+  content: "LeetCode";
+}
+
 .github::after,
-.linkedin::after {
+.linkedin::after,
+.leetcode:after {
   font-size: large;
   max-width: 0px;
   display: inline-block;
@@ -278,13 +286,16 @@ footer {
 .github:hover::after,
 .github:active::after,
 .linkedin:hover::after,
-.linkedin:active::after {
-  max-width: 80px;
+.linkedin:active::after,
+.leetcode:hover::after,
+.leetcode:active::after {
+  max-width: 90px;
   transition: all ease 800ms;
 }
 
 .github svg,
-.linkedin svg {
+.linkedin svg,
+.leetcode svg {
   vertical-align: 0;
 }
 
