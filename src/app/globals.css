@@ -126,6 +126,7 @@ nav .nav__home {
 
 .card-front {
   text-align: center;
+  user-select: none;
 }
 
 .card-front, .card-back {
@@ -146,6 +147,7 @@ nav .nav__home {
   width: 90%;
   padding: 10%;
   font-size: x-large;
+  user-select: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -281,6 +283,7 @@ footer {
   transition: all ease 500ms;
   overflow: hidden;
   margin-left: 5px;
+  user-select: none;
 }
 
 .github:hover::after,
