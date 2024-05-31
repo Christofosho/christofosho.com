@@ -1,6 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserTie } from "@fortawesome/free-solid-svg-icons/faUserTie";
+import Image from "next/image";
+import me from "../../../public/images/me.webp";
 
 interface IIntroductionProps {
 
@@ -9,7 +9,16 @@ interface IIntroductionProps {
 export default function Introduction({ }: IIntroductionProps) {
   return (
     <section className="view__introduction">
-      <FontAwesomeIcon icon={faUserTie} size="2xl" /><h1>Christopher Snow</h1>
+      <div>
+        <h1>Christopher Snow</h1>
+        <h2 className="subheading">a.k.a. Chris-to-fo-sho</h2>
+      </div>
+      <Image
+        src={me}
+        alt="A portrait of Christopher with a statue of a lion."
+        width={272} height={199}
+        placeholder="blur"
+      />
     </section>
   );
 }

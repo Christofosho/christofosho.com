@@ -24,6 +24,11 @@ h2 {
   font-weight: 200;
 }
 
+h2.subheading {
+  font-size: larger;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 2px 2px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -167,7 +172,18 @@ nav .nav__home {
 }
 
 .view__introduction {
+  flex-direction: row;
+  justify-content: space-around;
   background-color: rgb(250, 221, 187);
+}
+
+@media screen and (max-width: 700px) {
+  .view__introduction {
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: column-reverse;
+    text-align: center;
+  }
 }
 
 .view__about {
